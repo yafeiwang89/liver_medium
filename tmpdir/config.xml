@@ -1,0 +1,58 @@
+<PhysiCell_settings version="devel-version">
+	<domain>
+		<x_min>-750.0</x_min>
+		<x_max>750.0</x_max>
+		<y_min>-750.0</y_min>
+		<y_max>750.0</y_max>
+		<z_min>-10.0</z_min>
+		<z_max>10.0</z_max>
+		<dx>20.0</dx>
+		<dy>20.0</dy>
+		<dz>20.0</dz>
+		<use_2D>true</use_2D>
+	</domain>
+	
+	<overall>
+		<max_time units="min">7200.0</max_time> 
+		<time_units>min</time_units>
+		<space_units>micron</space_units>
+	</overall>
+	
+	<parallel>
+		<omp_num_threads>4</omp_num_threads>
+	</parallel> 
+	
+	<save>
+		<folder>.</folder>  
+
+		<full_data>
+			<interval units="min">20</interval>
+			<enable>True</enable>
+		</full_data>
+		
+		<SVG>
+			<interval units="min">20</interval>
+			<enable>True</enable>
+		</SVG>
+		
+		<legacy_data>
+			<enable>false</enable>
+		</legacy_data>
+	</save>
+	
+	<user_parameters>
+		<random_seed type="int" units="dimensionless">0</random_seed> 
+		 
+		
+		 
+		<tumor_transition_rate type="double" units="1/min">0.0022956841138659324</tumor_transition_rate>
+		<tumor_max_necrosis_rate type="double" units="1/min">0.002777777777777778</tumor_max_necrosis_rate>
+		<elastic_rate type="double" units="1/min">0.05</elastic_rate>
+		<plastic_rate type="double" units="1/min">0.0005</plastic_rate>
+		<max_ECM_displacement type="double" units="micron">0.75</max_ECM_displacement> 
+		<tumor_max_pressue type="double" units="dimensionless">1.0</tumor_max_pressue>
+		
+	</user_parameters>
+	
+	
+</PhysiCell_settings>
