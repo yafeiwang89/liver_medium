@@ -1,9 +1,9 @@
 <PhysiCell_settings version="devel-version">
 	<domain>
-		<x_min>-750.0</x_min>
-		<x_max>750.0</x_max>
-		<y_min>-750.0</y_min>
-		<y_max>750.0</y_max>
+		<x_min>-2500.0</x_min>
+		<x_max>2500.0</x_max>
+		<y_min>-2500.0</y_min>
+		<y_max>2500.0</y_max>
 		<z_min>-10.0</z_min>
 		<z_max>10.0</z_max>
 		<dx>20.0</dx>
@@ -41,11 +41,11 @@
 	</save>
 	
 	<user_parameters>
-		<random_seed type="int" units="dimensionless">0</random_seed> 
+		<random_seed hidden="true" type="int" units="dimensionless">0</random_seed> 
 		 
 		
 		 
-		<tumor_transition_rate type="double" units="1/min">0.0022956841138659324</tumor_transition_rate>
+		<tumor_transition_rate description="the birth rate of tumor cell" type="double" units="1/min">0.0022956841138659324</tumor_transition_rate>
 		<tumor_max_necrosis_rate type="double" units="1/min">0.002777777777777778</tumor_max_necrosis_rate>
 		<elastic_rate type="double" units="1/min">0.05</elastic_rate>
 		<plastic_rate type="double" units="1/min">0.0005</plastic_rate>

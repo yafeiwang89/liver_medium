@@ -115,16 +115,16 @@
 	</save>
 	
 	<user_parameters>
-		<random_seed type="int" units="dimensionless">0</random_seed> 
+		<random_seed type="int" units="dimensionless" hidden="true">0</random_seed> 
 		<!-- example parameters from the template --> 
 		
 		<!-- motile cell type parameters --> 
-		<tumor_transition_rate type="double" units="1/min">0.0022956841138659324</tumor_transition_rate>
-		<tumor_max_necrosis_rate type="double" units="1/min">0.002777777777777778</tumor_max_necrosis_rate>
-		<elastic_rate type="double" units="1/min">0.05</elastic_rate>
-		<plastic_rate type="double" units="1/min">0.0005</plastic_rate>
-		<max_ECM_displacement type="double" units="micron">0.75</max_ECM_displacement> 
-		<tumor_max_pressue type="double" units="dimensionless">1.0</tumor_max_pressue>
+		<tumor_transition_rate type="double" units="1/min" description="the cycle rate of tumor cell">0.0022956841138659324</tumor_transition_rate>
+		<tumor_max_necrosis_rate type="double" units="1/min" description="the maximum necrosis rate of tumor cell">0.002777777777777778</tumor_max_necrosis_rate>
+		<elastic_rate type="double" units="1/min" description="the elastic force between parenchyma and ECM">0.05 </elastic_rate>
+		<plastic_rate type="double" units="1/min" description="the plastic reorganization force of parenchyma">0.0005</plastic_rate>
+		<max_ECM_displacement type="double" units="micron" description="the maximum mechanical displacement of ECM">0.75</max_ECM_displacement> 
+		<tumor_max_pressue type="double" units="dimensionless" description="the maximum pressure threshold of tumor cell proliferation">1.0</tumor_max_pressue>
 		
 	</user_parameters>
 	
