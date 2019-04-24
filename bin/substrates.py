@@ -42,6 +42,7 @@ class SubstrateTab(object):
         self.numy = 0
 
         tab_height = '500px'
+        tab_height = '700px'
         constWidth = '180px'
         constWidth2 = '150px'
         tab_layout = Layout(width='900px',   # border='2px solid black',
@@ -49,7 +50,9 @@ class SubstrateTab(object):
 
         max_frames = 1   
         self.mcds_plot = interactive(self.plot_substrate, frame=(0, max_frames), continuous_update=False)  
-        svg_plot_size = '700px'
+        svg_plot_size = '900px'
+        svg_plot_size = '600px'
+        svg_plot_size = '500px'
         self.mcds_plot.layout.width = svg_plot_size
         self.mcds_plot.layout.height = svg_plot_size
 
@@ -158,13 +161,15 @@ class SubstrateTab(object):
         box_layout = Layout(display='flex',
                     flex_flow='row',
                     align_items='stretch',
-                    width='80%')
+                    width='90%')
         field_cmap_row3 = Box(children=items_auto, layout=box_layout)
 
 #        field_cmap_row3 = Box([self.save_min_max, self.cmap_min, self.cmap_max])
 
         # mcds_tab = widgets.VBox([mcds_dir, mcds_plot, mcds_play], layout=tab_layout)
         mcds_params = VBox([self.mcds_field, field_cmap_row2, field_cmap_row3, self.max_frames])  # mcds_dir
+#        mcds_params = VBox([self.mcds_field, field_cmap_row2, field_cmap_row3, self.max_frames], layout=tab_layout)  # mcds_dir
+
 #        mcds_params = VBox([self.mcds_field, field_cmap_row2, field_cmap_row3,])  # mcds_dir
 
 #        self.tab = HBox([mcds_params, self.mcds_plot], layout=tab_layout)

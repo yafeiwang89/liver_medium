@@ -197,6 +197,7 @@ class ConfigTab(object):
 
 
         box_layout = Layout(border='1px solid')
+        # box_layout = Layout(border='1px solid', height='500px')
 #        domain_box = VBox([label_domain,x_row,y_row,z_row], layout=box_layout)
         domain_box = VBox([label_domain,x_row,y_row], layout=box_layout)
         self.tab = VBox([domain_box,
