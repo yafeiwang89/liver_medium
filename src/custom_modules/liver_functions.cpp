@@ -436,7 +436,7 @@ void advance_liver_model( double dt )
 	if( elapsed_phenotype_time_from_last_update > update_interval )
 	{
 		check_for_flow_disruption();
-		// random_metastatic_seeding( dt );              // without random seeding    
+		random_metastatic_seeding( dt );              // with random seeding    
 
 		elapsed_phenotype_time_from_last_update = 0.0;
 	}
