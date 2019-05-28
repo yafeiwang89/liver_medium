@@ -74,10 +74,10 @@
 
 <PhysiCell_settings version="devel-version">
 	<domain>
-		<x_min>-2500</x_min>
-		<x_max>2500</x_max>
-		<y_min>-2500</y_min>
-		<y_max>2500</y_max>
+		<x_min>-5000</x_min>
+		<x_max>5000</x_max>
+		<y_min>-5000</y_min>
+		<y_max>5000</y_max>
 		<z_min>-10</z_min>
 		<z_max>10</z_max>
 		<dx>20</dx>
@@ -87,7 +87,7 @@
 	</domain>
 	
 	<overall>
-		<max_time units="min">43200</max_time> <!-- 5 days * 24 h * 60 min -->
+		<max_time units="min">43200</max_time> <!-- 30 days * 24 h * 60 min -->
 		<time_units>min</time_units>
 		<space_units>micron</space_units>
 	</overall>
