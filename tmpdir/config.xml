@@ -1,9 +1,9 @@
 <PhysiCell_settings version="devel-version">
 	<domain>
-		<x_min>-2500.0</x_min>
-		<x_max>2500.0</x_max>
-		<y_min>-2500.0</y_min>
-		<y_max>2500.0</y_max>
+		<x_min>-5000.0</x_min>
+		<x_max>5000.0</x_max>
+		<y_min>-5000.0</y_min>
+		<y_max>5000.0</y_max>
 		<z_min>-10.0</z_min>
 		<z_max>10.0</z_max>
 		<dx>20.0</dx>
@@ -13,7 +13,7 @@
 	</domain>
 	
 	<overall>
-		<max_time units="min">7200.0</max_time> 
+		<max_time units="min">43200.0</max_time> 
 		<time_units>min</time_units>
 		<space_units>micron</space_units>
 	</overall>
@@ -26,12 +26,12 @@
 		<folder>.</folder>  
 
 		<full_data>
-			<interval units="min">20</interval>
+			<interval units="min">360</interval>
 			<enable>True</enable>
 		</full_data>
 		
 		<SVG>
-			<interval units="min">20</interval>
+			<interval units="min">360</interval>
 			<enable>True</enable>
 		</SVG>
 		
@@ -45,12 +45,12 @@
 		 
 		
 		 
-		<tumor_transition_rate description="the birth rate of tumor cell" type="double" units="1/min">0.0022956841138659324</tumor_transition_rate>
-		<tumor_max_necrosis_rate type="double" units="1/min">0.002777777777777778</tumor_max_necrosis_rate>
-		<elastic_rate type="double" units="1/min">0.05</elastic_rate>
-		<plastic_rate type="double" units="1/min">0.0005</plastic_rate>
-		<max_ECM_displacement type="double" units="micron">0.75</max_ECM_displacement> 
-		<tumor_max_pressue type="double" units="dimensionless">1.0</tumor_max_pressue>
+		<tumor_transition_rate description="the cycle rate of tumor cell" type="double" units="1/min">0.0022956841138659324</tumor_transition_rate>
+		<tumor_max_necrosis_rate description="the maximum necrosis rate of tumor cell" type="double" units="1/min">0.002777777777777778</tumor_max_necrosis_rate>
+		<elastic_rate description="the elastic force between parenchyma and ECM" type="double" units="1/min">0.05</elastic_rate>
+		<plastic_rate description="the plastic reorganization force of parenchyma" type="double" units="1/min">0.0005</plastic_rate>
+		<max_ECM_displacement description="the maximum mechanical displacement of ECM" type="double" units="micron">0.75</max_ECM_displacement> 
+		<tumor_max_pressue description="the maximum pressure threshold of tumor cell proliferation" type="double" units="dimensionless">1.0</tumor_max_pressue>
 		
 	</user_parameters>
 	
