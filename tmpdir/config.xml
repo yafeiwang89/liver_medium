@@ -1,9 +1,9 @@
 <PhysiCell_settings version="devel-version">
 	<domain>
-		<x_min>-5000.0</x_min>
-		<x_max>5000.0</x_max>
-		<y_min>-5000.0</y_min>
-		<y_max>5000.0</y_max>
+		<x_min>-1000.0</x_min>
+		<x_max>1000.0</x_max>
+		<y_min>-1000.0</y_min>
+		<y_max>1000.0</y_max>
 		<z_min>-10.0</z_min>
 		<z_max>10.0</z_max>
 		<dx>20.0</dx>
