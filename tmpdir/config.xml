@@ -45,12 +45,12 @@
 		 
 		
 		 
-		<tumor_transition_rate description="the cycle rate of tumor cell" type="double" units="1/min">0.0022956841138659324</tumor_transition_rate>
-		<tumor_max_necrosis_rate description="the maximum necrosis rate of tumor cell" type="double" units="1/min">0.002777777777777778</tumor_max_necrosis_rate>
-		<elastic_rate description="the elastic force between parenchyma and ECM" type="double" units="1/min">0.05</elastic_rate>
-		<plastic_rate description="the plastic reorganization force of parenchyma" type="double" units="1/min">0.0005</plastic_rate>
-		<max_ECM_displacement description="the maximum mechanical displacement of ECM" type="double" units="micron">0.75</max_ECM_displacement> 
-		<tumor_max_pressue description="the maximum pressure threshold of tumor cell proliferation" type="double" units="dimensionless">1.0</tumor_max_pressue>
+		<tumor_transition_rate description="The proliferation rate of tumor cells" type="double" units="1/min">0.0022956841138659324</tumor_transition_rate>
+		<tumor_max_necrosis_rate description="The maximum necrosis rate of tumor cells" type="double" units="1/min">0.002777777777777778</tumor_max_necrosis_rate>
+		<elastic_rate description="The elastic force parameter for parenchyma" type="double" units="1/min">0.05</elastic_rate>
+		<plastic_rate description="The plastic reorganization force parameter for parenchyma" type="double" units="1/min">0.0005</plastic_rate>
+		<max_ECM_displacement description="The maximum mechanical displacement for parenchyma" type="double" units="micron">0.75</max_ECM_displacement> 
+		<tumor_max_pressue description="The maximum pressure threshold for tumor cells proliferation" type="double" units="dimensionless">1.0</tumor_max_pressue>
 		
 	</user_parameters>
 	

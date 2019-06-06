@@ -86,17 +86,17 @@ class UserTab(object):
         units_button6 = Button(description='', disabled=True, layout=units_button_layout) 
         units_button6.style.button_color = 'tan'
 
-        desc_button1 = Button(description='the cycle rate of tumor cell', disabled=True, layout=desc_button_layout) 
+        desc_button1 = Button(description='The proliferation rate of tumor cells', disabled=True, layout=desc_button_layout) 
         desc_button1.style.button_color = 'lightgreen'
-        desc_button2 = Button(description='the maximum necrosis rate of tumor cell', disabled=True, layout=desc_button_layout) 
+        desc_button2 = Button(description='The maximum necrosis rate of tumor cells', disabled=True, layout=desc_button_layout) 
         desc_button2.style.button_color = 'tan'
-        desc_button3 = Button(description='the elastic force between parenchyma and ECM', disabled=True, layout=desc_button_layout) 
+        desc_button3 = Button(description='The elastic force parameter for parenchyma', disabled=True, layout=desc_button_layout) 
         desc_button3.style.button_color = 'lightgreen'
-        desc_button4 = Button(description='the plastic reorganization force of parenchyma', disabled=True, layout=desc_button_layout) 
+        desc_button4 = Button(description='The plastic reorganization force parameter for parenchyma', disabled=True, layout=desc_button_layout) 
         desc_button4.style.button_color = 'tan'
-        desc_button5 = Button(description='the maximum mechanical displacement of ECM', disabled=True, layout=desc_button_layout) 
+        desc_button5 = Button(description='The maximum mechanical displacement for parenchyma', disabled=True, layout=desc_button_layout) 
         desc_button5.style.button_color = 'lightgreen'
-        desc_button6 = Button(description='the maximum pressure threshold of tumor cell proliferation', disabled=True, layout=desc_button_layout) 
+        desc_button6 = Button(description='The maximum pressure threshold for tumor cells proliferation', disabled=True, layout=desc_button_layout) 
         desc_button6.style.button_color = 'tan'
 
         row1 = [param_name1, self.tumor_transition_rate, units_button1, desc_button1] 
