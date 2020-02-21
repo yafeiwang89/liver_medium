@@ -1,0 +1,3 @@
+#!/bin/sh
+
+/usr/bin/invoke_app "$@" -C "start_jupyter -A -T @tool liver_medium.ipynb" -t pc4livermedium -u anaconda3-5.1
