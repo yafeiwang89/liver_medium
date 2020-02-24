@@ -1,7 +1,7 @@
 VERSION := 1.2.0
 PROGRAM_NAME:= myproj
 
- CC := g++
+CC := g++
 # CC := g++-mp-5 # typical macports compiler name
 # CC := g++-7 # typical homebrew compiler name 
 
