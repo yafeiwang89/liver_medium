@@ -111,8 +111,8 @@ In the model, two types of cell contacted with each other and produce force/pres
 
 <p>Each parenchymal agent follows regular adhesion-repulsion mechanics (with a position <em><b>x</b><sub>i</sub></em>). In addition, mechanical interactions are modeled with underlying ECM. Each agent <em>i</em> is attached to the ECM at <em><b>x</b><sub>i,ECM</sub></em>, and experiences an elastic force. Let <b>d</b><sub>i</sub> = <em><b>x</b><sub>i,ECM</sub></em> <em>&#8722;</em> <em><b>x</b><sub>i</sub></em>, and let <em>d<sub>i</sub></em> = &#8741;<b>d</b><sub>i</sub>&#8741; <em>&#8722;</em> <em>R<sub>i</sub></em> (<em>R<sub>i</sub></em> is cell’s equivalent radius) denote the elastic deformation; let <em>r<sub>E</sub></em> and <em>r<sub>P</sub></em> denote the elastic rate and plastic relaxation rate respectively, both the elastic and plastic reorganization show as following:</p>
 
-<p style="text-align: center;"> <img src="doc/img1.png" style="width: auto; height: auto;max-width: auto;max-height: 55px"> </p>
-<p style="text-align: center;"> <img src="doc/img2.png" style="width: auto; height: auto;max-width: auto;max-height: 55px"> </p>
+<p style="text-align: center;"> <img src="doc/img1.PNG" style="width: auto; height: auto;max-width: auto;max-height: 55px"> </p>
+<p style="text-align: center;"> <img src="doc/img2.PNG" style="width: auto; height: auto;max-width: auto;max-height: 55px"> </p>
 
 <p><span style="color: #d98040;">Liver parenchyma cells</span> are originally homeostatic. If parenchymal agent’s magnitude of displacement exceeds the maximum tolerated deformation (<em>d<sub>max</sub></em>), the parenchyma would enter apoptosis immediately. </p>
 
@@ -122,7 +122,7 @@ In the model, two types of cell contacted with each other and produce force/pres
 
 <p>The built-in &quot;live&quot; cell cycle model is used in our model, with the default models of apoptosis and necrosis. Thus, each cell agent can be Live, Apoptotic, or Necrotic. Apoptosis is modeled as TME-independent, with a constant apoptotic death rate <em>d<sub>A</sub></em> and a stochastic duration with mean <em>T<sub>A</sub></em>. Necrosis is modeled as oxygen-dependent: cells enter the necrotic state if <em>&sigma;</em> <em>&#60;</em> <em>&sigma;<sub>N</sub></em> (necrosis threshold), and then progress as described in <a href="https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005991">PhysiCell</a>. We also added a rule of pressure-regulated proliferation here, so the cycling rate is: </p>
 
-<p style="text-align: center;"> <img src="doc/img3.png" style="width: auto; height: auto;max-width: auto;max-height: 55px"> </p>
+<p style="text-align: center;"> <img src="doc/img3.PNG" style="width: auto; height: auto;max-width: auto;max-height: 55px"> </p>
 
 <p>The first part is transition rate with oxygen levels as described in <a href="https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005991">PhysiCell</a>. As <a href="https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005991">PhysiCell</a> explained, the normalized cell pressure in conﬂuent tissue (no gaps in the tissue) is 0.5 (2D). We deﬁned as <em>p<sub>2</sub></em> and <em>p<sub>1</sub></em> as 1.0 and 0 respectively here, which means if pressure the tumor cell experiences is greater than 1.0, we set the tumor cell proliferation rate as zero, also labeled as <span style="color: #ffff00;">yellow color</span> in the simulation. 
 </p>
