@@ -196,13 +196,6 @@ qt: PhysiCell_custom.o quicktest.cpp
 # cleanup and archiving
 
 # next 2 targets for nanoHUB
-install: all
-	cp $(PROGRAM_NAME) ../bin
-
-distclean: clean
-	rm -f ../bin/$(PROGRAM_NAME)
-
-# next 2 targets for nanoHUB
 install: 
 	. /etc/environ.sh; use -e -r anaconda3-5.1; make all
 	cp $(PROGRAM_NAME) ../bin
