@@ -520,7 +520,7 @@ void setup_liver_microenvironment( Microenvironment& M , std::string Xfile , std
     int yy = int (( default_microenvironment_options.X_range[0] - (-5000) ) /dx );	
 	
 	std::cout << "xx, yy =====================" << xx << '\t' << yy << std::endl; 
-	system("pause"); 
+	// system("pause"); 
 	
 	for( int i=xx; i < xx+m; i++)
 	{
@@ -558,7 +558,7 @@ void setup_liver_microenvironment( Microenvironment& M , std::string Xfile , std
 		// microenvironment.mesh.voxels[i].center
 
 		// use this access the jth substrate at the ith voxel
-		microenvironment.density_vector(n)[0] = O2_value[i][j];   // using the crop oxygen !!!!!!!!!!!!!!!!!!!!!
+		microenvironment.density_vector(n)[0] = temp[i][j];   // using the crop oxygen !!!!!!!!!!!!!!!!!!!!!
 		// microenvironment.density_vector(n)[1] = oxygen[i][j];
 		
 		// std::cout << "microenvironment.number_of_voxels()= " << i << '\t' << j << '\t' << oxygen[i][j] << std::endl; 
