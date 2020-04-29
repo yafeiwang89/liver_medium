@@ -3,7 +3,10 @@ This repository contains code and data for the nanoHUB app: https://nanohub.org/
 
 * * * 
 
-## Release summary: 
+## Release summary:
+
+### 1.3:
+* This version is actually same as 2.0. It's released in order to match with nanoHUB gui version
 
 ### 2.0: 
 * Add an animate tap
